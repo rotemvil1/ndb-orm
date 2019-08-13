@@ -1312,7 +1312,7 @@ class Property(ModelAttribute):
     else:
       if value is not None:
         newvalue = function(value)
-        if newvalue is not None and newvalue is not value:
+        if newvalue is not None:
           self._store_value(entity, newvalue)
           value = newvalue
     return value
